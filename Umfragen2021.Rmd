@@ -1,0 +1,239 @@
+---
+title: "Umfragen zur Bundestagswahl 2021"
+author: "Hans W. Borchers"
+date: "Mai 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Umfragen
+
+Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf \<www.wahlrecht.de\> ab Januar 2021. Die acht beteiligten Institute sind:
+
+| Institut                 | Auftraggeber                    |   # |
+|:-------------------------|:--------------------------------|----:|
+| Allensbach               | FAZ                             |   4 |
+| Kantar Emnid             | BamS                            |  17 |
+| Forsa                    | stern-RTL                       |  18 |
+| Forschungsgruppe Wahlen  | ZDF Politbarometer              |   6 |
+| GMS                      | SAT1                            |   3 |
+| Infratest Dimap          | ARD Deutschlandtrend            |   9 |
+| INSA                     | Bild                            |  23 |
+| YouGov                   | Redaktionsnetzwerk Deutschland  |   5 |
+
+Die HTML Tabellen werden in eine CSV Datei übertragen and dann als 'dataframe' in R eingelesen.
+
+```{r}
+U = read.table("umfragen2021.cvs", header=TRUE,
+               dec = ',', sep="\t")
+U$month = as.numeric(substr(U$Datum, 4, 5))
+N = nrow(U)  # Anzahl Umfragen
+```
+
+Bemerkung: Die Forsa Umfrage vom 20. April ist (mit 21% für CDU/CSU) wohl ein Ausreisser und wird in einigen Plots nicht angezeigt.
+
+```{r}
+head(U[, ])
+```
+```{r}
+table(U$Institut)
+```
+
+Ausserdem benutzen wir noch die Endergebnisse der Bundestagswahlen von 2013 und 2017, wobei die Ergebnisse von 2017 kaum noch vergleichbar sind wegen der hohen Werte für die CDU/CSU und der geringen Werte für die AfD.
+
+```{r}
+ee13 = c(41.5,  25.7,	  8.4,	 4.8,	     8.6,	  4.7)  # 2013
+ee17 = c(32.9,	20.5,	  9.2,	 8.9,	    10.7,	 12.6)  # 2017
+```
+
+------------------------------------------------------------------------
+
+## Multidimensional Scaling (MDS)
+
+In der Multidimensionalen Skalierung (MDS) werden Daten aus einem höher-dimensionalen Raum (hier dem 8-dim. Raum der prozentualen Verteilung) auf eine 2-dim. Ebene projeziert, so dass die Punkte möglichst gut voneinander getrennt werden.
+
+```{r}
+M = as.matrix(U[, 2:7])                 # nur numerische Werte
+# M = rbind(M[1:18, ], M[20:N, ])       # Forsa 20.04 auslassen
+# N = N - 1
+
+md = dist(M)                            # Distanzmatrix
+cmd = cmdscale(md)                      # MDS
+
+opar = par(mar = c(3,3,3,2))
+plot(cmd[, 1], cmd[, 2], pch = 20, col = U$month,
+     main = "Umfragen 2021 (MDS Plot)")
+grid()
+```
+
+### Contour/image plots
+
+Generate an interpolating 2D function that can be used for contour plotting.
+
+```{r}
+x = cmd[,1]; y = cmd[,2]
+z = M[, 1]
+
+# Akima interpolation
+F = akima::interp(x,y,z, linear = FALSE, extrap=TRUE)  # F$x, F$y, F$z
+
+# Barycentric interpolation
+f = function(xy) pracma::barylag2d(F$z, F$x, F$y, xy[1], xy[2])
+```
+
+```{r}
+opar = par(mar = c(2,2,2,1))
+image(F$x, F$y, F$z)
+#points(cmd[, 1], cmd[, 2], pch = 20, col = U$month)
+
+contour(F$x, F$y, F$z, add=TRUE, levels=seq(20, 36, by = 0.5), col = "gray")
+points(cmd[, 1], cmd[, 2], pch = 20, col = U$month)
+```
+
+### Using arrows
+
+```{r}
+opar = par(mar = c(2,2,2,1))
+image(F$x, F$y, F$z)
+points(cmd[, 1], cmd[, 2], pch = 20, col = U$month,
+     main = "Umfragen 2021 (MDS Plot)")
+grid()
+
+inst = "Infratest"; clr = 6
+i = which(U[, 9] == inst)
+points(cmd[i, 1], cmd[i, 2], pch = 20, col = clr)
+lines(cmd[i, 1], cmd[i, 2], col = clr, lwd = 1.5)
+inst = "ForWahlen"; clr = 4
+i = which(U[, 9] == inst)
+points(cmd[i, 1], cmd[i, 2], pch = 20, col = clr)
+lines(cmd[i, 1], cmd[i, 2], col = clr, lwd = 1.5)
+
+# clr = 0
+# for (inst in U$Institut) {
+#   clr = clr + 1
+#   i = which(U[, 9] == inst)
+#   points(cmd[i, 1], cmd[i, 2], pch = 20, col = clr)
+#   lines(cmd[i, 1], cmd[i, 2], col = clr)
+# }
+```
+
+
+## Verlauf einzelner Parteien
+
+### CDU/CSU
+
+```{r echo = FALSE}
+library(ggplot2)
+
+U1 = cbind(Datum = as.Date(U$Datum, format="%d.%m.%Y"),
+           Institut = U$Institut,
+           U[, c(2:7)])
+o = order(U1$Datum)
+U2 = U1[o, ]
+
+ggplot(U2, aes(x = Datum, y = CDUCSU, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() +  ylim(c(10, 40)) +
+    theme_gray()
+```
+
+### SPD
+
+```{r echo = FALSE}
+ggplot(U2, aes(x = Datum, y = SPD, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() + ylim(c(5, 35)) +
+    theme_gray()
+```
+
+### Grüne/Bündnis90
+
+```{r echo = FALSE}
+ggplot(U2, aes(x = Datum, y = Gruene, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() + ylim(c(5, 35)) +
+    theme_gray()
+```
+
+### FDP
+
+```{r echo = FALSE}
+ggplot(U2, aes(x = Datum, y = FDP, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() + ylim(c(5, 35)) +
+    theme_gray()
+```
+
+### DieLINKE
+
+```{r echo = FALSE}
+ggplot(U2, aes(x = Datum, y = Linke, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() + ylim(c(5, 35)) +
+    theme_gray()
+```
+
+### AfD
+
+```{r echo = FALSE}
+ggplot(U2, aes(x = Datum, y = AfD, group=Institut, col = Institut)) + 
+    geom_point() + geom_line() + ylim(c(5, 35)) +
+    theme_gray()
+```
+
+
+## Glättung der Umfragewerte
+
+Wir versuchen, eine Mittlung der Umfragen aller Institute zu erreichen. Dazu nutzen wir "Gauss'sche Prozesse", wie sie das Paket *GauPro* zur Verfügung stellt.
+
+```{r}
+library(GauPro)
+t0 = as.Date("2020-12-31")
+U3 = U2
+U3$Tage = as.numeric(U3$Datum - t0)
+
+gp = GauPro(U3$Tage, U3$CDUCSU)
+U3$z1  = predict(gp, c(U3$Tage))
+gp = GauPro(U3$Tage, U3$SPD)
+U3$z2 = predict(gp, c(U3$Tage))
+gp = GauPro(U3$Tage, U3$Gruene)
+U3$z3  = predict(gp, c(U3$Tage))
+gp = GauPro(U3$Tage, U3$FDP)
+U3$z4  = predict(gp, c(U3$Tage))
+# gp = GauPro(U3$Tage, U3$Linke)
+# z5 = predict(gp, c(U3$Tage))
+U3$z5 = rep(7.06, N)
+gp = GauPro(U3$Tage, U3$AfD)
+U3$z6  = predict(gp, c(U3$Tage))
+
+colors = c("CDUCSU" = "black", "SPD" = "red", "Gruene" = "green4", 
+           "FDP" = "blue", "Linke" = "magenta", "AfD" = "sienna")
+
+ggplot2::ggplot(data = U3) + # theme_bw() +
+    geom_line(aes(x = Datum, y = z1, color = "CDUCSU")) + 
+    geom_point(aes(x = Datum, y = CDUCSU), color = "gray") +
+    geom_line(aes(x = Datum, y = z2, color = "SPD")) + 
+    geom_line(aes(x = Datum, y = z3, color = "Gruene")) + 
+    # geom_point(aes(x = Datum, y = Gruene), color = "palegreen") +
+    geom_line(aes(x = Datum, y = z4, color = "FDP")) + 
+    geom_line(aes(x = Datum, y = z5, color = "Linke")) + 
+    geom_line(aes(x = Datum, y = z6, color = "AfD")) + 
+    scale_color_manual(values = colors) +
+    theme(legend.title = element_blank()) +
+    ylim(c(5, 40)) +
+    labs(x = "Zeitraum: Jan. - Mai 2021", y = "Prozente",
+         title = "Glättung der Umfrageergebnisse")
+```
+
+
+## Projektion
+
+Versuchen wir, einen Mittelwert aus acht Instituten zu generieren, ergibt sich in etwa folgende prozentuale Verteilung:
+
+| Partei   | Februar | April   |  Mai    | Juli    | Aug.    | Sept.   |
+|:---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| CDU/CSU  | 35.0  % | 28.2  % | 24.8  % |         |         |         |
+| SPD      | 15.8  % | 15.8  % | 14.6  % |         |         |         |
+| Grüne    | 18.5  % | 21.3  % | 25.0  % |         |         |         |
+| FDP      |  7.7  % | 10.2  % | 11.4  % |         |         |         |
+| DieLINKE |  7.1  % |  7.1  % |  7.1  % |         |         |         |
+| AfD      | 10.0  % | 10.8  % | 11.2  % |         |         |         |
+| Sonstige |  5.9  % |  6.6  % |  5.9  % |         |         |         |
