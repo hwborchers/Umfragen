@@ -89,3 +89,5 @@ legend(x = as.Date("2021-01-15"), y = 32,
        legend = c("CDU/CSU", "SPD", "Gruene", "FDP", "LINKE", "AfD"),
        col = c("black", "red", "darkgreen", "blue", "magenta", "brown"),
        lty = 1)
+
+print(tail(Umfragen))
