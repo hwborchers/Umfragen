@@ -42,7 +42,7 @@ Die Daten werden jeweils aktuell und online aus den Tabellen auf 'wahlrecht.de' 
 
 Die folgende Grafik zeigt Ergebnisse der einzelnen Umfragen für die Parteien und Gättungskurven für den Verlauf. Die durchgezogenen Linien folgen Friedman's *Supersmoother* (in R als Funktion `supsmu`), die gestrichelten Linien durch *Gauss'sche Prozesse* berechnete Approximationen (die besonders am Ende unterschiedlich sein können).
 
-![Umfragen 2021](U-19-08-2021.png)
+![Umfragen 2021](2021/U-19-08-2021.png)
 
 (Die Einzelergebnisse für AfD und DieLinke sind nicht eingezeichnet, um die Grafik im unteren Bereich nicht zu überlasten.)
 
