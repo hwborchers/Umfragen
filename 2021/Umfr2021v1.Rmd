@@ -198,9 +198,8 @@ gp = GauPro(U3$Tage, U3$Gruene)
 U3$z3  = predict(gp, c(U3$Tage))
 gp = GauPro(U3$Tage, U3$FDP)
 U3$z4  = predict(gp, c(U3$Tage))
-# gp = GauPro(U3$Tage, U3$Linke)
-# z5 = predict(gp, c(U3$Tage))
-U3$z5 = rep(7.06, N)
+gp = GauPro(U3$Tage, U3$Linke)
+z5 = predict(gp, c(U3$Tage))
 gp = GauPro(U3$Tage, U3$AfD)
 U3$z6  = predict(gp, c(U3$Tage))
 
@@ -212,7 +211,7 @@ ggplot2::ggplot(data = U3) + # theme_bw() +
     geom_point(aes(x = Datum, y = CDUCSU), color = "gray") +
     geom_line(aes(x = Datum, y = z2, color = "SPD")) + 
     geom_line(aes(x = Datum, y = z3, color = "Gruene")) + 
-    # geom_point(aes(x = Datum, y = Gruene), color = "palegreen") +
+    geom_point(aes(x = Datum, y = Gruene), color = "palegreen") +
     geom_line(aes(x = Datum, y = z4, color = "FDP")) + 
     geom_line(aes(x = Datum, y = z5, color = "Linke")) + 
     geom_line(aes(x = Datum, y = z6, color = "AfD")) + 

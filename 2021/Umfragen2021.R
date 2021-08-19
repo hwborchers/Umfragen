@@ -5,6 +5,8 @@ library(rvest)
 library(stringr)
 # library(GauPro)
 
+#-- --------------------------------------------------------------------
+
 partei <- c("CDUCSU", "SPD", "Gruene", "FDP", "LINKE", "AfD")
 weblinks <- c("https://www.wahlrecht.de/umfragen/allensbach.htm",
              "https://www.wahlrecht.de/umfragen/emnid.htm",
@@ -20,6 +22,8 @@ Umfragen <- data.frame(Datum = as.Date(character()),
                        CDUCSU = double(), SPD = double(), Gruene = double(),
                        FDP = double(), Linke = double(), AfD = double(),
                        Institut = character())
+
+#-- --------------------------------------------------------------------
 
 # Umfragedaten pro Institut
 for (inst in names(weblinks)) {
@@ -55,39 +59,61 @@ o <- order(Umfragen$Datum)
 Umfragen <- Umfragen[o, ]
 rownames(Umfragen) <- NULL
 
+#-- --------------------------------------------------------------------
+
 # Darstellung der Umfragewerte
 
 par(mar = c(2,2,2,1))
 plot(Umfragen$Datum, Umfragen$CDUCSU, pch = 20, col = "gray",
-     ylim = c(5, 40), main = "Umfragen zur Bundestagswahl 2021")
+     xlim = as.Date(c("2021-01-01", "2021-09-20")),
+     ylim = c(5, 40), 
+     main = "Umfragen zur Bundestagswahl 2021")
 grid()
 
 # Friedman's supersmoother
 fss <- supsmu(Umfragen$Datum, Umfragen$CDUCSU, bass = 0)
-lines(fss$x, fss$y, lwd = 1.25)
-# gp <- GauPro(Umfragen$Datum, Umfragen$CDUCSU)
-# lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+lines(fss$x, fss$y, lwd = 2.0)
 
-points(Umfragen$Datum, Umfragen$Gruene, pch = 20, col = "lightgreen")
+points(Umfragen$Datum, Umfragen$Gruene, pch = 20, col = "greenyellow")
 fss <- supsmu(Umfragen$Datum, Umfragen$Gruene, bass = 0)
-lines(fss$x, fss$y, col = "darkgreen", lwd = 1.25)
+lines(fss$x, fss$y, col = "green3", lwd = 2.0)
 
 points(Umfragen$Datum, Umfragen$SPD, pch = 20, col = "orange")
 fss <- supsmu(Umfragen$Datum, Umfragen$SPD, bass = 0)
-lines(fss$x, fss$y, col = "red", lwd = 1.25)
+lines(fss$x, fss$y, col = "red", lwd = 2.0)
 
+points(Umfragen$Datum, Umfragen$FDP, pch = 20, col = "lightblue")
 fss <- supsmu(Umfragen$Datum, Umfragen$FDP, bass = 0)
-lines(fss$x, fss$y, col = "blue", lwd = 1.25)
+lines(fss$x, fss$y, col = "blue", lwd = 2.0)
 
 fss <- supsmu(Umfragen$Datum, Umfragen$AfD, bass = 0)
-lines(fss$x, fss$y, col = "brown", lwd = 1.25)
+lines(fss$x, fss$y, col = "brown", lwd = 2.0)
 
 fss <- supsmu(Umfragen$Datum, Umfragen$LINKE, bass = 0)
-lines(fss$x, fss$y, col = "magenta", lwd = 1.25)
+lines(fss$x, fss$y, col = "magenta", lwd = 2.0)
 
-legend(x = as.Date("2021-01-15"), y = 32,
+nr <- nrow(Umfragen); now <- Umfragen$Datum[nr]
+text(as.Date("2021-04-01"), 38,
+     paste("Letzte Umfrage:", Umfragen$Institut[nr], Umfragen$Datum[nr]),
+     adj = 0)
+
+library(GauPro)
+gp <- GauPro(Umfragen$Datum, Umfragen$CDUCSU)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+gp <- GauPro(Umfragen$Datum, Umfragen$Gruene)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+gp <- GauPro(Umfragen$Datum, Umfragen$SPD)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+gp <- GauPro(Umfragen$Datum, Umfragen$FDP)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+
+legend(x = as.Date("2021-01-01"), y = 33,
        legend = c("CDU/CSU", "SPD", "Gruene", "FDP", "LINKE", "AfD"),
        col = c("black", "red", "darkgreen", "blue", "magenta", "brown"),
-       lty = 1)
+       lty = 1, bty = 'n')
 
+
+# split(Umfragen, Umfragen$Institut)
 print(tail(Umfragen))
+
+#-- --------------------------------------------------------------------
