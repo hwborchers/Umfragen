@@ -1,8 +1,7 @@
----
-title: "Umfragen zur Bundestagswahl 2021"
-author: "Hans W. Borchers"
-date: "2021-08-19"
----
+# Umfragen zur Bundestagswahl 2021
+
+Hans W. Borchers  
+*2021-08-19*
 
 ### Institute und letzte Umfragen
 
