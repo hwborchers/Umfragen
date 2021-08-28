@@ -2,16 +2,17 @@
 title: "Umfragen zur Bundestagswahl 2021"
 author: "Hans W. Borchers"
 date: "2021-08-19"
+
 ---
 
 ### Institute und letzte Umfragen
 
 Eine Auswertung der Umfragen zur Bundestagswahl am 26. September 2021.
 
-Stand: **20. August 2021**
+Stand: **27. August 2021**
 *(Die Graphik wird in etwa jede Woche aktualisiert)*
 
-Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf [wahlrecht.de](www.wahlrecht.de) ab Januar 2021.\
+Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf [wahlrecht.de](https://www.wahlrecht.de/) ab Januar 2021.\
 Die acht beteiligten Institute sind:
 
 | Institut                 | Auftraggeber                    | # Umfragen |

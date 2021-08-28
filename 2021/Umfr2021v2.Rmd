@@ -14,7 +14,7 @@ Eine Auswertung der Umfragen zur Bundestagswahl am 26. September 2021.
 Stand: **20. August 2021**
 *(Die Graphik wird in etwa jede Woche aktualisiert)*
 
-Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf [wahlrecht.de](www.wahlrecht.de) ab Januar 2021.\
+Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf [wahlrecht.de](https://www.wahlrecht.de/) ab Januar 2021.\
 Die acht beteiligten Institute sind:
 
 | Institut                 | Auftraggeber                    | # Umfragen |
@@ -28,16 +28,18 @@ Die acht beteiligten Institute sind:
 | INSA                     | Bild                            |         52 |
 | YouGov                   | Redaktionsnetzwerk Deutschland  |          8 |
 
-Die letzten 6 Umfragen haben zu folgenden Ergebnissen geführt:
+Die letzten Umfragen pro Institut führten zu folgenden Ergebnissen:
 
-|      Datum | CDUCSU | SPD | Gruene |  FDP | LINKE | AfD |  Institut |
-|:-----------|-------:|----:|-------:|-----:|------:|----:|----------:|
-| 2021-08-11 |     23 | 19  |   20.0 | 12.0 |   7.0 |  10 |     Forsa |
-| 2021-08-13 |     26 | 19  |   19.0 | 11.0 |   7.0 |  11 | ForWahlen |
-| 2021-08-14 |     25 | 20  |   18.0 | 12.0 |   7.0 |  11 |      INSA |
-| 2021-08-16 |     25 | 20  |   17.5 | 12.5 |   6.5 |  11 |      INSA |
-| 2021-08-18 |     23 | 21  |   19.0 | 12.0 |   6.0 |  10 |     Forsa |
-| 2021-08-19 |     22 | 21  |   19.0 | 12.0 |   7.0 |  11 |     Emnid |
+|      Datum | CDUCSU | SPD  | Gruene |  FDP | LINKE | AfD  |  Institut  |
+|:-----------|-------:|-----:|-------:|-----:|------:|-----:|-----------:|
+| 2021-07-27 |  30.0  | 15.0 |  18.0  | 12.0 |  7.0  | 10.0 |        GMS |
+| 2021-08-19 |  27.5  | 19.5 |  17.5  | 11.0 |  7.5  | 11.0 | Allensbach |
+| 2021-08-19 |  23.0  | 21.0 |  17.0  | 13.0 |  7.0  | 11.0 |  Infratest |
+| 2021-08-23 |  23.0  | 23.0 |  17.0  | 13.0 |  7.0  | 11.0 |       INSA |
+| 2021-08-24 |  22.0  | 23.0 |  18.0  | 12.0 |  6.0  | 10.0 |      Forsa |
+| 2021-08-26 |  23.0  | 23.0 |  18.0  | 12.0 |  7.0  | 11.0 |      Emnid |
+| 2021-08-27 |  22.0  | 22.0 |  20.0  | 10.0 |  6.0  | 11.0 |  ForWahlen |
+| 2021-08-27 |  22.0  | 24.0 |  16.0  | 13.0 |  8.0  | 11.0 |     Yougov |
 
 Die Daten werden jeweils aktuell und online aus den Tabellen auf 'wahlrecht.de' gezogen und mit R weiter verarbeitet. Die Grahik wird mit Base R Plot Routinen erzeugt (eine interaktive Version mit 'ggplo2' und 'plotly' könnte folgen).
 

@@ -63,6 +63,8 @@ rownames(Umfragen) <- NULL
 
 # Darstellung der Umfragewerte
 
+# png("Umfragen.png", 800, 450)
+
 par(mar = c(2,2,2,1))
 plot(Umfragen$Datum, Umfragen$CDUCSU, pch = 20, col = "gray",
      xlim = as.Date(c("2021-01-01", "2021-09-20")),
@@ -112,6 +114,7 @@ legend(x = as.Date("2021-01-01"), y = 33,
        col = c("black", "red", "darkgreen", "blue", "magenta", "brown"),
        lty = 1, bty = 'n')
 
+# dev.off()
 
 # split(Umfragen, Umfragen$Institut)
 print(tail(Umfragen))
