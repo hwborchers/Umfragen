@@ -1,13 +1,14 @@
 ##  Hilfen
 
 # Stimmen in Anteilen
-votes = c(20.5, 25.0, 17.0, 12, 11.5, 7) / 100
+votes = c(21.5, 25.5, 16.0, 12.0, 12.0, 6.0) / 100
 sonst = 1 - sum(votes)
 
 # Umrechnung in Sitze
 seats = 700 * votes * (2 - sum(votes))
 seats = round(seats) + c(1,1,1,1,0,0)
 sum(seats)
+names(seats) = c("CDU/CSU", "SPD", "Gruene", "FDP", "AfD", "Linke")
 seats
 
 # Stimmenzahl der Koalitionen

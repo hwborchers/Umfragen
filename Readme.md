@@ -7,7 +7,7 @@ Hans W. Borchers
 
 Eine Auswertung der Umfragen zur Bundestagswahl am 26. September 2021.
 
-Stand: **Mo., 5. Sept. 2021**
+Stand: **Wed., 15. Sept. 2021**
 *(Die Graphik wird in etwa jede Woche aktualisiert)*
 
 Für die Umfragen der Wahlforschungs-Institute nutzen wir die veröffentlichten Daten auf [wahlrecht.de](https://www.wahlrecht.de/) ab Januar 2021.\
@@ -15,27 +15,27 @@ Die acht beteiligten Institute sind:
 
 | Institut                 | Auftraggeber                    | # Umfragen |
 |:-------------------------|:--------------------------------|-----------:|
-| Allensbach               | FAZ                             |         10 |
-| Kantar Emnid             | BamS                            |         34 |
-| Forsa                    | stern-RTL                       |         37 |
-| Forschungsgruppe Wahlen  | ZDF Politbarometer              |         14 |
-| GMS                      | SAT1                            |          6 |
+| Allensbach               | FAZ                             |         11 |
+| Kantar Emnid             | BamS                            |         35 |
+| Forsa                    | stern-RTL                       |         39 |
+| Forschungsgruppe Wahlen  | ZDF Politbarometer              |         15 |
+| GMS                      | SAT1                            |          8 |
 | Infratest Dimap          | ARD Deutschlandtrend            |         17 |
-| INSA                     | Bild                            |         57 |
-| YouGov                   | Redaktionsnetzwerk Deutschland  |         10 |
+| INSA                     | Bild                            |         60 |
+| YouGov                   | Redaktionsnetzwerk Deutschland  |         11 |
 
 Die letzten Umfragen pro Institut haben zu folgenden Ergebnissen geführt:
 
 |      Datum | CDUCSU |  SPD | Gruene |  FDP  | LINKE |  AfD |   Institut |
 |:-----------|-------:|-----:|-------:|------:|------:|-----:|-----------:|
-| 2021-07-27 |  21.0  | 23.0 |  18.0  |  12.0 |  6.0  | 11.0 |        GMS |
-| 2021-08-28 |  26.0  | 24.0 |  17.0  |  10.5 |  6.0  | 10.5 | Allensbach |
-| 2021-08-31 |  22.0  | 23.0 |  18.0  |  12.0 |  6.0  | 10.0 |      Forsa |
-| 2021-09-02 |  21.0  | 25.0 |  19.0  |  11.0 |  7.0  | 11.0 |      Emnid |
 | 2021-09-02 |  20.0  | 25.0 |  16.0  |  13.0 |  6.0  | 12.0 |  Infratest |
-| 2021-09-03 |  22.0  | 25.0 |  17.0  |  11.0 |  7.0  | 11.0 |  ForWahlen |
-| 2021-09-03 |  20.0  | 25.0 |  15.0  |  13.0 |  8.0  | 12.0 |     Yougov |
-| 2021-09-04 |  20.0  | 25.0 |  16.0  |  13.0 |  7.0  | 12.0 |       INSA |
+| 2021-09-08 |  25.0  | 27.0 |  15.5  |   9.5 |  6.0  | 11.0 | Allensbach |
+| 2021-09-09 |  21.0  | 25.0 |  17.0  |  12.0 |  6.0  | 12.0 |      Emnid |
+| 2021-09-10 |  22.0  | 25.0 |  17.0  |  11.0 |  6.0  | 11.0 |  ForWahlen |
+| 2021-09-10 |  21.0  | 26.0 |  15.0  |  10.0 |  6.0  | 12.0 |     Yougov |
+| 2021-09-13 |  20.5  | 26.0 |  15.0  |  12.5 |  6.5  | 11.5 |       INSA |
+| 2021-09-14 |  23.0  | 25.0 |  16.0  |  13.0 |  6.0  | 11.0 |        GMS |
+| 2021-09-14 |  21.0  | 25.0 |  17.0  |  11.0 |  6.0  | 11.0 |      Forsa |
 
 Die Daten werden jeweils aktuell und online aus den Tabellen auf 'wahlrecht.de' gezogen und mit R weiter verarbeitet. Die Grahik wird mit Base R Plot Routinen erzeugt (eine interaktive Version mit 'ggplo2' und 'plotly' könnte folgen).
 
@@ -54,13 +54,13 @@ Aus diesen letzten Ergebnissen ergibt sich folgende Schätzung der prozentualen 
 
 | Partei    | Anteil Stimmen | Sitze Bundestag|
 |----------:|---------------:|---------------:|
-| CDU/CSU   | 20.5 % | 155 |
-| SPD       | 25   % | 188 |
-| B90/Grüne | 17   % | 128 |
-| FDP       | 12   % |  91 |
-| DieLinke  |  7   % |  52 |
-| AfD       | 11.5 % |  86 |
-| Sonstige  |  7   % |   - |
+| CDU/CSU   | 21.5 % | 162 |
+| SPD       | 25.5 % | 192 |
+| B90/Grüne | 16   % | 121 |
+| FDP       | 12   % |  90 |
+| DieLinke  |  6   % |  45 |
+| AfD       | 11.5 % |  90 |
+| Sonstige  |  6.5 % |   - |
 
 Die Sitzverteilung ist dabei gerechnet mit etwa 700 Plätzen im Bundestag und 6.5% abgegebener Stimmen für Parteien, die wegen der 5%-Hürde *nicht* in den Bundestag kommen. Die wahrscheinlich hohe Zahl an Überhangmandaten für die CDU/CSU wird nicht berücksichtigt.
 
@@ -68,13 +68,13 @@ Die "grosse Koalition" hat keine Mehrheit mehr (343/700), ebenso hätte eine Lin
 
 | Koalition | Parteien | Anzahl stimmen | Bemerkung |
 |:----------|:---------|:---------------|:----------|
-| Ampel Koalition | SPD, Grüne, FDP | 407 |  |
+| Ampel Koalition | SPD, Grüne, FDP | 404 |  |
 | Jamaica Koalition (*) | CDU/CSU, Grüne, FDP | 374 |  |
-| Deutschland Koalition | CDU/CSU, SPD, FDP | 434 |  |
+| Deutschland Koalition | CDU/CSU, SPD, FDP | 445 |  |
 | Kenia Koalition | CDU/CSU, SPD, Grüne | 471 | unwahrscheinlich |
-| Linkskoalition | SPD, Grüne, DieLinke | 368 | knappe Mehrheit |
-| Grosse Koalition | CDU/CSU, SPD | 343 | keine Mehrheit |
-| Rot-Grün | SPD, Grüne | 343 | keine Mehrheit |
+| Linkskoalition | SPD, Grüne, DieLinke | 358 | knappe Mehrheit |
+| Grosse Koalition | CDU/CSU, SPD | 354 | knappe Mehrheit |
+| Rot-Grün | SPD, Grüne | 313 | keine Mehrheit |
 
 (*) auch "schwarze Ampel" oder kurz "Schwampel" genannt.
 
