@@ -67,7 +67,7 @@ rownames(Umfragen) <- NULL
 
 par(mar = c(2,2,2,1))
 plot(Umfragen$Datum, Umfragen$CDUCSU, pch = 20, col = "gray",
-     xlim = as.Date(c("2021-01-01", "2021-09-20")),
+     xlim = as.Date(c("2021-01-01", "2021-10-01")),
      ylim = c(5, 40), 
      main = "Umfragen zur Bundestagswahl 2021")
 grid()
@@ -95,28 +95,61 @@ fss <- supsmu(Umfragen$Datum, Umfragen$LINKE, bass = 0)
 lines(fss$x, fss$y, col = "magenta", lwd = 2.0)
 
 nr <- nrow(Umfragen); now <- Umfragen$Datum[nr]
-text(as.Date("2021-04-01"), 38,
-     paste("Letzte Umfrage:", Umfragen$Institut[nr], Umfragen$Datum[nr]),
-     adj = 0)
+text(as.Date("2021-06-01"), 38, paste("Aktuelles Datum:", now), adj = 0)
+# text(as.Date("2021-04-01"), 38,
+#      paste("Letzte Umfrage:", Umfragen$Institut[nr], Umfragen$Datum[nr]),
+#      adj = 0)
 
 library(GauPro)
 gp <- GauPro(Umfragen$Datum, Umfragen$CDUCSU)
 lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_CDUCSU <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("\nCDUCSU", '\t', pr_CDUCSU, '\n')
+
 gp <- GauPro(Umfragen$Datum, Umfragen$Gruene)
 lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_Gruene <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("Gruene", '\t', pr_Gruene, '\n')
+
 gp <- GauPro(Umfragen$Datum, Umfragen$SPD)
 lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_SPD <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("SPD", '\t', pr_SPD, '\n')
+
 gp <- GauPro(Umfragen$Datum, Umfragen$FDP)
 lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_FDP <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("FDP", '\t', pr_FDP, '\n')
+
+gp <- GauPro(Umfragen$Datum, Umfragen$LINKE)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_LINKE <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("LINKE", '\t', pr_LINKE, '\n')
+
+gp <- GauPro(Umfragen$Datum, Umfragen$AfD)
+lines(Umfragen$Datum, predict(gp, Umfragen$Datum), lty = 2)
+pr_AfD <- round(predict(gp, as.Date("2021-09-26")), 1)
+cat("AfD", '\t', pr_AfD, '\n')
+
 
 legend(x = as.Date("2021-01-01"), y = 33,
        legend = c("CDU/CSU", "SPD", "Gruene", "FDP", "LINKE", "AfD"),
        col = c("black", "red", "darkgreen", "blue", "magenta", "brown"),
        lty = 1, bty = 'n')
 
+# E = data.frame(Jahr = c(2017, 2021), CDU.CSU = c('32.9', '--'),
+#                SPD = c('20.5', '--'), Gruene = c('8.9', '--'),
+#                FDP = c('10.7', '--'), AfD = c('12.6', '--'),
+#                DieLinke = c('9.2', '--'), Sonstige = c('5.0', '--'))
+#
+# plotrix::addtable2plot(x = as.Date("2021-04-01"), y = 33, E,
+#                        cex = 1.0, text.col = "darkblue",
+#                        xpad = 0.20, ypad = 0.80, title = "Endergebnis")
+
 # dev.off()
 
 # split(Umfragen, Umfragen$Institut)
+cat('\n')
 print(tail(Umfragen))
 
 #-- --------------------------------------------------------------------
