@@ -27,12 +27,26 @@ Die gestrichelte, senkrechte Linie ist der Zeitpunkt der Bundestagswahl am 26.9.
 
 ### Auswertung
 
+Die Ergebnisse der letzten Umfragen pro Institut ergeben
+
+```
+       Datum CDUCSU  SPD Gruene FDP LINKE  AfD   Institut
+1 2024-02-06     32 16.0   13.0   4   2.0 18.0        GMS
+2 2024-03-07     29 16.0   14.0   5   3.0 19.0  Infratest
+3 2024-03-07     29 15.0   14.0   4   3.0 19.0     Yougov
+4 2024-03-21     34 15.0   14.0   5   3.0 16.0 Allensbach
+5 2024-03-22     29 17.0   15.0   5   3.0 18.0      Emnid
+6 2024-03-22     31 16.0   13.0   4   3.0 18.0  ForWahlen
+7 2024-03-25     30 15.5   12.5   5   3.5 19.5       INSA
+8 2024-03-26     31 16.0   13.0   4   3.0 17.0      Forsa
+```
+
 Der Median der Umfragen aus den letzten vier Wochen ergibt eine gute Übereinstimmung mit dem letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
 CDUCSU    SPD Gruene    FDP  LINKE    AfD 
-    30     15     14      5      3     19    (median)
-    30.3   15.0   13.6    4.7    3.1   18.6  (mean)
+  30.5   16.0   13.5    4.5    3.0   18.0  (median)
+  30.6   15.8   13.6    4.5    2.9   18.1  (mean)
 ```
 
 Die Anzahl der Umfragen pro Institut weist grosse Unterschiede zwischen den einzelnen Instituten auf: Allensbach zum Beispiel hat wahlberechtigte Bürger im Jahr 2023 nur einmal im Monat befragt, INSA dagegen zweimal (!) jede Woche.
