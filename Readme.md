@@ -15,7 +15,7 @@ Die Daten aller dieser Institute werden auf der Plattform Wahlrecht veröffentli
 
 ### Aktuelle Graphik
 
-![](umfrage_aktuell.png)
+
 
 
 ### Erläuterungen
