@@ -31,22 +31,22 @@ Die Ergebnisse der letzten Umfragen pro Institut ergeben
 
 ```
        Datum CDUCSU  SPD Gruene FDP LINKE  AfD   Institut
-1 2024-02-06     32 16.0   13.0   4   2.0 18.0        GMS
-2 2024-03-07     29 16.0   14.0   5   3.0 19.0  Infratest
-3 2024-03-07     29 15.0   14.0   4   3.0 19.0     Yougov
-4 2024-03-21     34 15.0   14.0   5   3.0 16.0 Allensbach
-5 2024-03-22     29 17.0   15.0   5   3.0 18.0      Emnid
-6 2024-03-22     31 16.0   13.0   4   3.0 18.0  ForWahlen
-7 2024-03-25     30 15.5   12.5   5   3.5 19.5       INSA
-8 2024-03-26     31 16.0   13.0   4   3.0 17.0      Forsa
+1 2024-02-06   32.0 16.0   13.0   4   2.0 18.0        GMS
+2 2024-04-04   30.0 15.0   15.0   4   3.0 18.0  Infratest
+3 2024-04-11   29.0 14.0   15.0   5   4.0 19.0     Yougov
+4 2024-04-19   30.0 16.0   14.0   5   3.0 18.0      Emnid
+5 2024-04-26   30.0 15.0   15.0   4   4.0 17.0  ForWahlen
+6 2024-04-26   32.5 16.0   15.0   6   3.0 16.0 Allensbach
+7 2024-04-30   30.0 17.0   12.0   5   3.0 16.0      Forsa
+8 2024-04-30   29.5 16.5   12.5   5   3.5 18.5       INSA
 ```
 
 Der Median der Umfragen aus den letzten vier Wochen ergibt eine gute Übereinstimmung mit dem letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
 CDUCSU    SPD Gruene    FDP  LINKE    AfD 
-  30.5   16.0   13.5    4.5    3.0   18.0  (median)
-  30.6   15.8   13.6    4.5    2.9   18.1  (mean)
+  30.0   16.0   14.5    5.0    3.0   18.0 
+  30.4   15.7   13.9    4.8    3.2   17.6 
 ```
 
 Die Anzahl der Umfragen pro Institut weist grosse Unterschiede zwischen den einzelnen Instituten auf: Allensbach zum Beispiel hat wahlberechtigte Bürger im Jahr 2023 nur einmal im Monat befragt, INSA dagegen zweimal (!) jede Woche.
