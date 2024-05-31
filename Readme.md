@@ -70,7 +70,7 @@ Trend     +0.3    -0.4    +0.8     0.0    -0.2    +0.2    -0.9      +0.2
 Ergebnis
 ```
 
-![](europawahl.png){width=576}
+![](europawahl.png)
 
 Der Trend bezieht sich auf ein lineares Modell der Umfragewerte, bezogen auf den 9. Juni 2024, den Tag der Wahl. Das Balkendiagramm stellt diese vorhergesagten prozentualen Anteile dar.
 
