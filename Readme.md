@@ -64,14 +64,14 @@ Der Einfluss dieser Institute auf die Glättung der Kurve und auf den aktuellen 
 Speziell auf die Europawahl ausgerichtete Umfragen gibt es nicht viele, das sind 15 Umfragen in diesem Jahr, davon die Hälfte durch INSA. Eine Grafik wie oben macht daher nicht viel Sinn. Stattdessen verwenden wir eine gewichtete Mittelbildung, die neueren Umfragen werden dabei höher gewichtet als solche, die mehrere Monate alt sind.
 
 ```
-           CDU     SPD   Grüne     FDP   Linke     BSW     AfD  Sonstige
-Ende Mai  29.6    14.9    14.2     4.0     3.5     6.1    15.9      11.8
-Trend     +0.3    -0.4    +0.8     0.0    -0.2    +0.2    -0.9      +0.2
-Ergebnis
+            CDU/CSU     SPD   Grüne     FDP   Linke     BSW     AfD  Sonstige
+Prognose       29.6    14.9    14.2     4.0     3.5     6.1    15.9      11.8
+Endergebnis    30.2    14.0    12.0     5.0     2.7     6.0    15.9      14.2
 ```
 
 ![](europawahl.png)
 
-Der Trend bezieht sich auf ein lineares Modell der Umfragewerte, bezogen auf den 9. Juni 2024, den Tag der Wahl. Das Balkendiagramm stellt diese vorhergesagten prozentualen Anteile dar.
+In der Grafik werden die Prognose ('gestrichelt'), wenige Tage vor der Wahl, und das Endergebnis ('gefüllt') der Europawahl 2024 für die wichtigsten Parteien nebeneinander dargestellt.
+(CDU meint das aufsummierte Ergebnis von CDU und CSU.)
 
-Die Standardabweichung in diesen Daten ist beträchtlich, sie beträgt zum Beispiel für die CDU/CSU 1.8, für die Grünen sogar 2.1 Prozentpunkte. Die hohe Standardabweichung der AfD von 2.4 ist eine Folge des Einbruchs der Umfragen in den letzten Wochen und Monaten.
+Für CDU/CSU, BSW und AfD stimmen Prognose und Endergebnis recht gut überein. SPD und Grüne sind unter dem vorausgesagten Ergebnis geblieben.
