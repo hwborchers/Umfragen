@@ -1,7 +1,7 @@
 
 ## Umfragen 2020-2024
 
-*NEU: Umfragen zur Europawahl am 9. Juni 2024*
+*NEU: Vergleich von Prognose und Endergebnis der Europawahl am 9. Juni 2024*
 
 
 ### Aktuelle Graphik
@@ -30,22 +30,23 @@ Die gestrichelte, senkrechte Linie ist der Zeitpunkt der Bundestagswahl am 26.9.
 Die Ergebnisse der letzten Umfragen pro Institut ergeben
 
 ```
-       Datum CDUCSU  SPD Gruene FDP LINKE  AfD   Institut
-1 2024-05-02   31.0 15.0     15   5     -  18  Infratest
-2 2024-05-07   31.0 15.0     14   4     2  18        GMS
-3 2024-05-10   30.0 16.0     14   4     4  19     Yougov
-4 2024-05-17   30.0 16.0     14   5     4  16      Emnid
-5 2024-05-17   31.0 15.0     13   5     4  16  ForWahlen
-6 2024-05-24   32.5 17.5     13   6     3  14 Allensbach
-7 2024-05-28   30.0 16.0     13   6     -  15      Forsa
-8 2024-05-28   30.5 15.0     12   5     3  17       INSA
+       Datum  CDUCSU    SPD  Gruene   FDP  LINKE    AfD     Institut
+  ------------------------------------------------------------------
+  2024-05-30    31.0   15.0    14.0   4.4    3.0   18.0    Infratest
+  2024-06-07    29.0   14.0    12.0   4.0    4.0   18.0       Yougov
+  2024-06-12    30.0   16.0    13.0   5.0    3.0   17.0        Emnid
+  2024-06-18    31.0   14.0    14.0   5.0    3.0   18.0          GMS
+  2024-06-20    32.0   16.0    13.0   6.0    3.0   15.0   Allensbach
+  2024-06-25    31.0   15.0    11.0   5.0     --   16.0        Forsa
+  2024-06-28    31.0   14.0    13.0   4.0    3.0   17.0    ForWahlen
+  2024-06-29    30.0   15.0    12.0   6.0    2.0   17.0         INSA
 ```
 
 Der Median der Umfragen aus den letzten vier Wochen ergibt eine gute Übereinstimmung mit dem letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
 CDUCSU    SPD Gruene    FDP  LINKE    AfD 
-  30.8   15.5   13.5    5.0    3.5   16.5  (median)
+  31.0   15.0   13.0    5.0    3.0   17.0  (median)
   30.8   15.7   13.5    5.0    3.3   16.6  (mean)
 ```
 
