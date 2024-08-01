@@ -48,7 +48,7 @@ Der Median der Umfragen aus den letzten vier Wochen ergibt eine gute Übereinsti
 
 ```
 CDU/CSU    SPD  Gruene   FDP  LINKE    AfD   BSW
-  ------------------------------------------------------------------
+------------------------------------------------------------------
    31.0   14.5   12.5    5.0    3.0   17.0    --   (median)
    30.9   14.7   12.2    5.0    3.1   17.4    --   (mean)
    30.0   13.9   11.9    5.2    2.7   15.9   6.2   (Europawahl)
