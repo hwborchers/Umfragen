@@ -1,8 +1,6 @@
 
 ## Umfragen 2020-2024
 
-*NEU: Vergleich von Prognose und Endergebnis der Europawahl am 9. Juni 2024*
-
 
 ### Aktuelle Graphik
 
