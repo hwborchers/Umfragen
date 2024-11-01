@@ -13,26 +13,26 @@
 Die Ergebnisse der letzten Umfragen pro Institut ergeben
 
 ```
-     Datum CDUCSU  SPD Gruene  FDP LINKE   AfD   FW   BSW     Institut
-----------------------------------------------------------------------
-2024-09-17   34.0   14     11    4     2    18    3     7          GMS
-2024-09-19   35.5   16     10    4    NA    17   NA     9   Allensbach
-2024-09-27   31.0   16     12    4     4    17   NA     8    ForWahlen
-2024-10-04   31.0   16     11    4     3    17    3     7        Emnid
-2024-10-08   31.0   17     11    3     3    17   NA     6        Forsa
-2024-10-10   31.0   16     13    3     3    17    3     8    Infratest
-2024-10-10   32.0   16     11    5     3    18    1     8       Yougov
-2024-10-12   31.0   16     11    4     3    19   NA     9         INSA
+     Datum  CDUCSU  SPD  Gruene  FDP  LINKE  AfD  BSW     Institut
+------------------------------------------------------------------
+2024-09-17     34    14   11.0   4.0    2.0   18    7          GMS
+2024-10-04     31    16   11.0   4.0    3.0   17    7        Emnid
+2024-10-10     32    16   11.0   5.0    3.0   18    8       Yougov
+2024-10-18     31    16   11.0   3.0    4.0   18    8    ForWahlen
+2024-10-18     36    15   10.5   4.5     NA   16    9   Allensbach
+2024-10-28     31    15   11.0   4.0    2.5   19    9         INSA
+2024-10-29     32    16    9.0   4.0    3.0   17    7        Forsa
+2024-10-31     34    16   11.0   4.0     NA   17    6    Infratest
 ```
 
 Der Median der Umfragen aus den letzten vier Wochen ergibt eine gute Übereinstimmung 
 mit dem letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
-CDUCSU    SPD  Gruene    FDP  LINKE    AfD     FW    BSW
---------------------------------------------------------------------
-  31.0   16.0    11.0    4.0    3.0   17.0    3.0    8.0    (median)
-  31.8   16.1    11.3    3.9    3.2   17.4    2.3    7.8    (mean)
+CDUCSU    SPD  Gruene   FDP  LINKE    AfD   BSW
+----------------------------------------------
+  32.0   16.0    11.0   4.0    3.0   17.0   8.0   (median)
+  32.4   15.7    10.6   4.1    3.1   17.4   7.7     (mean)
 ```
 
 Die Anzahl der Umfragen pro Institut weist grosse Unterschiede zwischen den einzelnen 
