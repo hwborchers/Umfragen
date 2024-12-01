@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-
+![Abb. Sonntagsfrage](Sonntagsfrage_2024--12-01.png)
 
 (*Diese Grafik wird hier zum Ende eines jeden Monats aktualisiert*)
 
