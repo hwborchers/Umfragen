@@ -14,24 +14,24 @@ Die Umfragen aus den letzten vier Wochen ergeben eine gute Übereinstimmung mit 
 letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
-        CDUCSU   SPD  Gruene   FDP  LINKE   AfD  BSW  Sonstige
---------------------------------------------------------------
-          33.0  15.0    12.3   4.1    3.3  18.1  6.2       8.0
+        CDUCSU    SPD   Gruene   FDP   LINKE    AfD   BSW   Sonst.
+------------------------------------------------------------------
+          32.0   16.0     13.4   3.7     3.3   18.8   5.4     7.4
 ```
 
 Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
 
 ```
-Datum       CDUCSU  SPD  Gruene  FDP  LINKE  AfD  BSW    Institut
------------------------------------------------------------------
-2024-09-14      34   14      11    4      2   18    7         GMS
-2024-11-14      33   15      12    5      3   19    7      Yougov
-2024-11-21      33   14      14    4      3   19    6   Infratest
-2024-11-22      32   16      12    3      4   18    5   ForWahlen
-2024-11-22      37   15      10    4     --   17    7  Allensbach
-2024-11-26      32   15      12    4      4   18    4       Forsa
-2024-11-29      32   15      13    4      3   18    6       Emnid
-2024-11-30      32   15      13    5      3   18    8        INSA
+Datum       CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW     Institut
+------------------------------------------------------------------------
+2024-12-05      30    18      13      4       3    19     7       Yougov
+2024-12-19      33    14      14      3       3    19     5    Infratest
+2024-12-20      31    17      14      4       3    18     5        Emnid
+2024-12-20      31    15      14      3       4    19     5    ForWahlen
+2024-12-20      36    16      12      4      NA    18     6   Allensbach
+2024-12-23      31    16      13      3       4    19     4        Forsa
+2025-12-03      33    16      13      4       3    18     4          GMS
+2025-01-04      31    16      13      4       3    20     7         INSA
 ```
 
 ### Sitzverteilung
