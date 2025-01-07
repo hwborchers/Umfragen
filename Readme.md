@@ -36,24 +36,33 @@ Datum       CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW     Institut
 
 ### Sitzverteilung
 
-Wenn FDP, Linke und BSW *nicht* in den Bundestag kämen (Fall 1), entfielen zusammen mit den Sonstigen 15.4% der Stimmen. Für eine Mehrheit einer Koalition reichten dann 42.3% der abgegebenen Stimmen. Die Koalitionen CDU/CSU+SPD und CDU/CSU+Grüne wären möglich.
+Wenn FDP, Linke und BSW nicht in den Bundestag kämen (Fall 1), entfielen 
+zusammen mit den Sonstigen 15.4% der Stimmen. Für eine Mehrheit einer Koalition 
+reichten dann etwa 43.5% der abgegebenen Stimmen. Die Koalitionen CDU/CSU+SPD 
+und CDU/CSU+Grüne wären möglich.
 
-Nehmen wir an, eine der beiden kleinen Parteien (FDP oder Linke) käme mit 5% knapp in den Bundestag (Fall 2), dann entstünde eine Situation wie in der folgenden Tabelle beschrieben. Die Mehrheit von CDU/CSU und Grünen stünde damit auf der Kippe.
+Nehmen wir an, eine der beiden kleinen Parteien (FDP oder Linke) käme mit 5% 
+knapp in den Bundestag (Fall 2), dann entstünde eine Situation wie in der 
+folgenden Tabelle beschrieben. Die Mehrheit von CDU/CSU und Grünen stünde damit 
+auf der Kippe (301von 600 Sitzen im Bundestag).
 
 Hypothetische Sitzverteilung im Bundestag 2025:
 
 ```
              Fall 1       Sitze  | Fall 2       Sitze
     -------------------------------------------------
-    CDU/CSU:      39.1 %    235  |      36.8 %    221
-    SPD:          17.7 %    106  |      16.7 %    101
-    Grüne:        14.5 %     87  |      13.7 %     82
-    AfD:          21.4 %    128  |      20.2 %    121
-    BSW:           7.3 %     44  |       6.9 %     42
-    FDP o. Linke    --       --  |       5.6 %     33
+    CDU/CSU:      37.4 %    224  |      35.3 %    212
+    SPD:          18.7 %    112  |      17.7 %    106
+    Grüne:        15.6 %     94  |      14.8 %     89
+    AfD:          22.0 %    132  |      20.7 %    124
+    BSW:           6.3 %     38  |       6.0 %     36
+    FDP o. Linke    --       --  |       5.5 %     33
 ```
 
-Wenn die Linkspartei mit drei Direktmandaten und etwa 3-4 % in den Bundestag kommt, ändert sich gegenüber Fall 2 nur wenig.
+Wenn die Linkspartei mit drei Direktmandaten und etwa 3-4 % in den Bundestag 
+kommt, ändert sich gegenüber Fall 2 nur wenig. Und wenn drei kleine Parteien in 
+den Bundestag kommen, funktioniert wahrscheinlich nur noch eine grosse 
+Koalition.
 
 ### Erläuterungen
 
@@ -64,5 +73,3 @@ Die Daten aller dieser Institute werden auf der Plattform [Wahlrecht](https://ww
 Jeder Punkt (kleiner Kreis) ist *ein* Umfrageergebnis für *eine* Partei; zu jeder Umfrage gehören also acht Punkte zum gleichen Datum. Die durchgezogene Linie ist eine **Glättung** der Daten zu einer Partei, hier generiert mit Friedman's *SuperSmoother* (eine Glättung mit der *Lowess* Glättungsmethode würde eine fast identische Kurve erzeugen). Die Farben sind den Farben der jeweiligen Parteien angepasst.
 
 Die gestrichelte, senkrechte Linie ist der Zeitpunkt der Bundestagswahl am 26.9.2021. Die darauf abgebildeten kleinen Quadrate markieren die offiziellen Endergebnisse der jeweiligen Parteien. Unten ist die "5-Prozent Hürde" eingezeichnet. Die letzten Umfragen vor dem Wahltag haben das Endergebnis der Bundestagswahl 2021 (im Mittel aller Umfragen) relativ gut vorausgesagt.
-
-Die Anzahl der Umfragen pro Institut weist grosse Unterschiede zwischen den einzelnen Instituten auf: Allensbach zum Beispiel hat wahlberechtigte Bürger im Jahr 2023 nur einmal im Monat befragt, INSA dagegen zweimal (!) jede Woche.
