@@ -30,7 +30,7 @@ Datum       CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW     Institut
 2024-12-20      31    15      14      3       4    19     5    ForWahlen
 2024-12-20      36    16      12      4      NA    18     6   Allensbach
 2024-12-23      31    16      13      3       4    19     4        Forsa
-2025-12-03      33    16      13      4       3    18     4          GMS
+2025-01-03      33    16      13      4       3    18     4          GMS
 2025-01-04      31    16      13      4       3    20     7         INSA
 ```
 
