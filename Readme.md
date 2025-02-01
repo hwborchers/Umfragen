@@ -6,7 +6,7 @@
 
 ![Abb. Sonntagsfrage](Rplot.png)
 
-(*Diese Grafik wird drei Wochen vor der Wahl noch einmal aktualisiert*)
+(*Diese Grafik wird bis zur Wahl gegen Ende jeder Woche aktualisiert*)
 
 ### Auswertung
 
