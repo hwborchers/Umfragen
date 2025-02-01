@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-![Abb. Sonntagsfrage](Rplot.png)
+
 
 (*Diese Grafik wird drei Wochen vor der Wahl noch einmal aktualisiert*)
 
