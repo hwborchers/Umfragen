@@ -14,24 +14,23 @@ Die Umfragen aus den letzten vier Wochen ergeben eine gute Übereinstimmung mit 
 letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
-        CDUCSU    SPD   Gruene   FDP   LINKE    AfD   BSW   Sonst.
+        CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW  Sonst.
 ------------------------------------------------------------------
-          32.0   16.0     13.4   3.7     3.3   18.8   5.4     7.4
+          30.3   15.7     13.6    3.9     4.5   20.9   4.7    6.4
 ```
 
 Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
 
 ```
-Datum       CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW     Institut
+Datum        CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW    Institut
 ------------------------------------------------------------------------
-2024-12-05      30    18      13      4       3    19     7       Yougov
-2024-12-19      33    14      14      3       3    19     5    Infratest
-2024-12-20      31    17      14      4       3    18     5        Emnid
-2024-12-20      31    15      14      3       4    19     5    ForWahlen
-2024-12-20      36    16      12      4      NA    18     6   Allensbach
-2024-12-23      31    16      13      3       4    19     4        Forsa
-2025-01-03      33    16      13      4       3    18     4          GMS
-2025-01-04      31    16      13      4       3    20     7         INSA
+1 2025-01-23     34    17     13.5     4    --      20     5  Allensbach
+2 2025-01-28     30    16     14.0     4     4      20     3       Forsa
+3 2025-01-29     29    15     13.0     3     5      23     6      Yougov
+4 2025-01-30     30    15     15.0     4     5      20     4   Infratest
+5 2025-01-30     29    15     14.0     4     5      21     4   ForWahlen
+6 2025-01-31     30    15     14.0     4     4      20     5       Emnid
+7 2025-02-01     30    17     12.0     4     4      22     6        INSA
 ```
 
 ### Sitzverteilung
