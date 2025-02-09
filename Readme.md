@@ -16,52 +16,48 @@ letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung obe
 ```
         CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW  Sonst.
 ------------------------------------------------------------------
-          30.3   15.7     13.6    3.9     4.5   20.9   4.7    6.4
+          30.1   16.0     13.6    4.0     5.2   20.6   4.9     5.6
 ```
 
 Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
 
 ```
-Datum        CDUCSU   SPD   Gruene   FDP   LINKE   AfD   BSW    Institut
-------------------------------------------------------------------------
-1 2025-01-23     34    17     13.5     4    --      20     5  Allensbach
-2 2025-01-28     30    16     14.0     4     4      20     3       Forsa
-3 2025-01-29     29    15     13.0     3     5      23     6      Yougov
-4 2025-01-30     30    15     15.0     4     5      20     4   Infratest
-5 2025-01-30     29    15     14.0     4     5      21     4   ForWahlen
-6 2025-01-31     30    15     14.0     4     4      20     5       Emnid
-7 2025-02-01     30    17     12.0     4     4      22     6        INSA
+Datum        CDUCSU     SPD   Gruene   FDP   LINKE   AfD   BSW    Institut
+---------------------  ---------------------------------------------------
+2025-01-23     34.0    17.0     13.5   4.0    NA    20.0   5.0  Allensbach
+2025-01-31     30.0    15.0     14.0   4.0     4.0  20.0   5.0       Emnid
+2025-02-04     28.0    16.0     15.0   4.0     5.0  20.0   4.0       Forsa
+2025-02-05     29.0    18.0     12.0   4.0     6.0  22.0   6.0      Yougov
+2025-02-06     31.0    15.0     14.0   4.0     5.0  21.0   4.0   Infratest
+2025-02-07     30.0    15.0     15.0   4.0     6.0  20.0   4.0   ForWahlen
+2025-02-07     30.0    15.0     14.0   4.0     5.0  21.0   4.0         GMS
+2025-02-08     29.0    16.0     12.0   4.0     5.0  21.0   6.0        INSA
 ```
 
 ### Sitzverteilung
 
-Wenn FDP, Linke und BSW nicht in den Bundestag kämen (Fall 1), entfielen 
-zusammen mit den Sonstigen 15.4% der Stimmen. Für eine Mehrheit einer Koalition 
+Wenn nur eine der drei kleinen Parteien (Fall 1) in den Bundestag käme, entfielen 
+zusammen mit den Sonstigen etwa 15.5% der Stimmen. Für eine Mehrheit einer Koalition 
 reichten dann etwa 43.5% der abgegebenen Stimmen. Die Koalitionen CDU/CSU+SPD 
 und CDU/CSU+Grüne wären möglich.
 
-Nehmen wir an, eine der beiden kleinen Parteien (FDP oder Linke) käme mit 5% 
-knapp in den Bundestag (Fall 2), dann entstünde eine Situation wie in der 
-folgenden Tabelle beschrieben. Die Mehrheit von CDU/CSU und Grünen stünde damit 
-auf der Kippe (301von 600 Sitzen im Bundestag).
+Nehmen wir an, eine weitere der beiden kleinen Parteien (z.B FDP oder BSW) 
+käme mit 5% knapp in den Bundestag (Fall 2), dann entstünde eine Situation wie 
+in der folgenden Tabelle beschrieben. Die Mehrheit von CDU/CSU und Grünen stünde 
+damit auf der Kippe (CDU/CSU und SPD zusammen nur 306 von 600 Sitzen).
 
 Hypothetische Sitzverteilung im Bundestag 2025:
 
 ```
              Fall 1       Sitze  | Fall 2       Sitze
     -------------------------------------------------
-    CDU/CSU:      37.4 %    224  |      35.3 %    212
+    CDU/CSU:      35.2 %    211  |      33.3 %    200
     SPD:          18.7 %    112  |      17.7 %    106
-    Grüne:        15.6 %     94  |      14.8 %     89
-    AfD:          22.0 %    132  |      20.7 %    124
-    BSW:           6.3 %     38  |       6.0 %     36
-    FDP o. Linke    --       --  |       5.5 %     33
+    Grüne:        15.9 %     95  |      15.0 %     90
+    AfD:          24.1 %    145  |      22.8 %    137
+    Linke:         6.1 %     37  |       5.8 %     34
+    FDP o. BSW      --       --  |       5.5 %     33
 ```
-
-Wenn die Linkspartei mit drei Direktmandaten und etwa 3-4 % in den Bundestag 
-kommt, ändert sich gegenüber Fall 2 nur wenig. Und wenn drei kleine Parteien in 
-den Bundestag kommen, funktioniert wahrscheinlich nur noch eine grosse 
-Koalition.
 
 ### Erläuterungen
 
