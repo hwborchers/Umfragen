@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-![Abb. Sonntagsfrage](Rplot_2025-02-08.png)
+![Abb. Sonntagsfrage](Rplot_2025-02-15.png)
 
 (*Diese Grafik wird bis zur Wahl gegen Ende jeder Woche aktualisiert*)
 
@@ -14,24 +14,24 @@ Die Umfragen aus den letzten vier Wochen ergeben eine gute Übereinstimmung mit 
 letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
 ```
-        CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW  Sonst.
-------------------------------------------------------------------
-          30.1   16.0     13.6    4.0     5.2   20.6   4.9     5.6
+            CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW  Sonst.
+----------------------------------------------------------------------
+              30.3   15.4     13.4    4.1     5.9   20.6   4.6     5.7
 ```
 
 Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
 
 ```
-Datum        CDUCSU     SPD   Gruene   FDP   LINKE   AfD   BSW    Institut
----------------------  ---------------------------------------------------
-2025-01-23     34.0    17.0     13.5   4.0    NA    20.0   5.0  Allensbach
-2025-01-31     30.0    15.0     14.0   4.0     4.0  20.0   5.0       Emnid
-2025-02-04     28.0    16.0     15.0   4.0     5.0  20.0   4.0       Forsa
-2025-02-05     29.0    18.0     12.0   4.0     6.0  22.0   6.0      Yougov
-2025-02-06     31.0    15.0     14.0   4.0     5.0  21.0   4.0   Infratest
-2025-02-07     30.0    15.0     15.0   4.0     6.0  20.0   4.0   ForWahlen
-2025-02-07     30.0    15.0     14.0   4.0     5.0  21.0   4.0         GMS
-2025-02-08     29.0    16.0     12.0   4.0     5.0  21.0   6.0        INSA
+     Datum  CDUCSU    SPD  Gruene   FDP  LINKE    AfD   BSW     Institut
+------------------------------------------------------------------------
+2025-01-31    30.0   15.0    14.0   4.0    4.0   20.0   5.0        Emnid
+2025-02-07    30.0   15.0    14.0   4.0    5.0   21.0   4.0          GMS
+2025-02-10    30.0   15.5    13.0   4.0    6.0   22.0   5.5         INSA
+2025-02-11    29.0   16.0    14.0   4.0    6.0   20.0   4.0        Forsa
+2025-02-12    29.0   16.0    12.0   4.0    6.0   21.0   5.0       Yougov
+2025-02-13    32.0   14.0    14.0   4.0    6.0   21.0   4.5    Infratest
+2025-02-13    32.0   15.0    13.0   5.0    6.0   20.0   4.0   Allensbach
+2025-02-14    30.0   16.0    14.0   4.0    7.0   20.0   4.0    ForWahlen
 ```
 
 ### Sitzverteilung
