@@ -8,6 +8,8 @@
 
 (*Diese Grafik wird bis zur Wahl gegen Ende jeder Woche aktualisiert*)
 
+Die *Frankfurter Allgemeine* hat eine ähnliche, aber interaktive Grafik auf ihrer Seite [Wie stehen die Umfragen vor der Bundestagswahl?](https://www.faz.net/aktuell/politik/bundestagswahl/sonntagsfrage-zur-bundestagswahl-2025-wo-die-parteien-in-den-neuesten-wahlumfragen-stehen-19459939.html) veröffentlicht.
+
 ### Auswertung
 
 Die Umfragen aus den letzten vier Wochen ergeben eine gute Übereinstimmung mit dem
