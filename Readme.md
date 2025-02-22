@@ -4,9 +4,9 @@
 
 ### Aktuelle Graphik
 
-![Abb. Sonntagsfrage](Rplot_2025-02-15.png)
+! [Abb. Sonntagsfrage] (Rplot_2025-02-15.png)
 
-(*Diese Grafik wird bis zur Wahl gegen Ende jeder Woche aktualisiert*)
+(*Diese Grafik wird nach der Wahl noch einmal aktualisiert*)
 
 Die *Frankfurter Allgemeine* hat eine ähnliche, aber interaktive Grafik auf ihrer Seite [Wie stehen die Umfragen vor der Bundestagswahl?](https://www.faz.net/aktuell/politik/bundestagswahl/sonntagsfrage-zur-bundestagswahl-2025-wo-die-parteien-in-den-neuesten-wahlumfragen-stehen-19459939.html) veröffentlicht. Und ebenso die *ZEIT Online* mit [Wer führt in den altuellen Umfragen?](https://www.zeit.de/politik/deutschland/umfragen-bundestagswahl-neuwahl-wahltrend).
 
