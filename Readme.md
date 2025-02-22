@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-! [Abb. Sonntagsfrage] (Rplot_2025-02-22.png)
+![Abb. Sonntagsfrage](Rplot_2025-02-22.png)
 
 (*Diese Grafik wird nach der Wahl noch einmal aktualisiert*)
 
