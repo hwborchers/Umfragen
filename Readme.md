@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-![Abb. Sonntagsfrage](Rplot_2025-02-22.png)
+! [Abb. Sonntagsfrage] (Rplot_2025-02-22.png)
 
 (*Diese Grafik wird nach der Wahl noch einmal aktualisiert*)
 
@@ -18,7 +18,8 @@ letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung obe
 ```
             CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW   Sonst.
 -----------------------------------------------------------------------
-              29.9   15.1     13.2    4.4     7.0   20.6   4.5     5.3
+Schätzung     29.9   15.1     13.2    4.4     7.0   20.6   4.5     5.3
+Endergebnis   28.52  16.41    11.61   4.33    8.77  20.80  4.97    4.5
 ```
 
 Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
@@ -51,14 +52,14 @@ SPD stehen auf der Kippe (und sind vielleicht nicht möglich).
 Hypothetische Sitzverteilung im Bundestag 2025:
 
 ```
-             Fall 1       Sitze  | Fall 2       Sitze
-    -------------------------------------------------
-    CDU/CSU:                220  |                205
-    SPD:                    111  |                104
-    Grüne:                   97  |                 91
-    AfD:                    151  |                142
-    Linke:                   51  |                 48
-    FDP o. BSW               --  |                 40
+             Fall 1       Sitze  | Fall 2       Sitze | Endergebnis  Sitze |
+    ------------------------------------------------------------------------
+    CDU/CSU:                220  |                205 |                208 |
+    SPD:                    111  |                104 |                120 |
+    Grüne:                   97  |                 91 |                 85 |
+    AfD:                    151  |                142 |                152 |
+    Linke:                   51  |                 48 |                 64 |
+    FDP o. BSW               --  |                 40 |                 -- |
 ```
 
 ### Erläuterungen
