@@ -6,7 +6,7 @@
 
 ![Abb. Sonntagsfrage](Rplot_2025-02-23.png)
 
-(*Diese Grafik wird nach der Wahl noch einmal aktualisiert*)
+(*Diese Grafik wurde nach der Wahl zum letzten Mal aktualisiert*)
 
 Die *Frankfurter Allgemeine* hat eine ähnliche, aber interaktive Grafik auf ihrer Seite [Wie stehen die Umfragen vor der Bundestagswahl?](https://www.faz.net/aktuell/politik/bundestagswahl/sonntagsfrage-zur-bundestagswahl-2025-wo-die-parteien-in-den-neuesten-wahlumfragen-stehen-19459939.html) veröffentlicht. Und ebenso die *ZEIT Online* mit [Wer führt in den altuellen Umfragen?](https://www.zeit.de/politik/deutschland/umfragen-bundestagswahl-neuwahl-wahltrend) und die Neue Züricher Zeitung (NZZ) auf ihrer [Deutschland](https://www.nzz.ch/deutschland) Seite.
 
@@ -75,6 +75,31 @@ Die gestrichelte, senkrechte Linie ist der Zeitpunkt der Bundestagswahl am 26.9.
 ### Vergleich der Institute
 
 Wie gut haben die verschiedenen Umfrage-Institute die Ergebnisse letzten Wahlen vorhergesagt? Dazu betrachten wir nur die Umfragen bis zu zwei Wochen vor dem Wahltermin. Für die Veranschaulichung der Differenzen benutzen wir die 'multidimensionale Skalierung' (MDS).
+
+**Bundestagswahl 2025**
+
+Für die multidimensionale Skalierung der Umfrageergebnisse wurden die folgenden Daten benutzt, einschliesslich der gemittelten Ergebnisse der Zeitungen und meiner eigenen (HwB), wie oben eingetragen:
+
+```
+#    Datum       CDUCSU    SPD  Gruene    FDP  LINKE    AfD   BSW     Institut
+#  1 2025-01-31    30.0   15.0     14.0   4.0    4.0   20.0   5.0        Emnid
+#  2 2025-02-13    32.0   14.0     14.0   4.0    6.0   21.0   4.5    Infratest
+#  3 2025-02-19    31.0   15.0     13.0   4.0    6.0   20.0   4.0          GMS
+#  4 2025-02-20    28.0   16.0     14.0   4.5    8.0   21.0   4.5    ForWahlen
+#  5 2025-02-20    30.0   15.0     13.0   4.0    7.0   21.0   5.0         INSA
+#  6 2025-02-21    29.0   15.0     13.0   5.0    8.0   21.0   3.0        Forsa
+#  7 2025-02-21    32.0   14.5     12.0   4.5    7.5   20.0   4.5   Allensbach
+#  8 2025-02-21    29.0   16.0     13.0   4.0    8.0   20.0   5.0       Yougov
+#  9 2025-02-22    30.4   15.2     13.4   4.3    5.9   20.4   4.3          FAZ
+# 10 2025-02-22    30.0   15.4     13.2   4.3    6.8   20.5   4.4         ZEIT
+# 11 2025-02-22    30.2   15.3     13.1   4.4    6.6   20.6   4.3          NZZ
+# 12 2025-02-22    30.0   15.1     13.3   4.3    6.9   20.6   4.5          HWB
+# 13 2025-02-23    28.5   16.4     11.4   4.3    8.8   20.8   4.95    Ergebnis
+```
+
+![Vergleich der Umfragen zur Bundestagswahl 2025](BW2025_mds.png)
+
+Die niedrigeren Voraussagen für die CDU/CSU finden sich weiter rechts in der Grahik, daher liegt auch das Endergebnis in diesem Bereich.
 
 **Bundestagswahl 2021**
 
