@@ -4,63 +4,13 @@
 
 ### Aktuelle Graphik
 
-![Abb. Sonntagsfrage](Rplot_2025-02-23.png)
 
-(*Diese Grafik wurde nach der Wahl zum letzten Mal aktualisiert*)
 
-Die *Frankfurter Allgemeine* hat eine ähnliche, aber interaktive Grafik auf ihrer Seite [Wie stehen die Umfragen vor der Bundestagswahl?](https://www.faz.net/aktuell/politik/bundestagswahl/sonntagsfrage-zur-bundestagswahl-2025-wo-die-parteien-in-den-neuesten-wahlumfragen-stehen-19459939.html) veröffentlicht. Und ebenso die *ZEIT Online* mit [Wer führt in den altuellen Umfragen?](https://www.zeit.de/politik/deutschland/umfragen-bundestagswahl-neuwahl-wahltrend) und die Neue Züricher Zeitung (NZZ) auf ihrer [Deutschland](https://www.nzz.ch/deutschland) Seite.
+(*Diese Grafik wird alle Vierteljahr oder vor einer Bundestags- oder Landtagswahl aktualisiert.*)
 
-### Auswertung
+Die *Frankfurter Allgemeine* hat eine ähnliche, aber interaktive Grafik auf ihrer Seite [Wie stehen die Umfragen vor der Bundestagswahl?](https://www.faz.net/aktuell/politik/bundestagswahl/sonntagsfrage-zur-bundestagswahl-2025-wo-die-parteien-in-den-neuesten-wahlumfragen-stehen-19459939.html) veröffentlicht. Und ebenso die *ZEIT Online* mit [Wer führt in den altuellen Umfragen?](https://www.zeit.de/politik/deutschland/umfragen-bundestagswahl-neuwahl-wahltrend).
 
-Die Umfragen aus den letzten vier Wochen ergeben eine gute Übereinstimmung mit dem
-letzten geglätteten Wert (dem Ende der geglätteten Linien in der Abbildung oben).
 
-```
-            CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW   Sonst.
------------------------------------------------------------------------
-Schätzung     29.9   15.1     13.2    4.4     7.0   20.6   4.5     5.3
-Endergebnis   28.52  16.41    11.61   4.33    8.77  20.80  4.97    4.5
-```
-
-Die einzelnen Ergebnisse der letzten Umfragen pro Institut lauten
-
-```
-     Datum  CDUCSU    SPD   Gruene    FDP   LINKE    AfD   BSW    Institut
---------------------------------------------------------------------------
-2025-01-31    30.0   15.0     14.0    4.0     4.0   20.0   5.0       Emnid
-2025-02-13    32.0   14.0     14.0    4.0     6.0   21.0   4.5   Infratest
-2025-02-19    31.0   15.0     13.0    4.0     6.0   20.0   4.0         GMS
-2025-02-20    28.0   16.0     14.0    4.5     8.0   21.0   4.5   ForWahlen
-2025-02-21    29.0   15.0     13.0    5.0     8.0   21.0   3.0       Forsa
-2025-02-21    32.0   14.5     12.0    4.5     7.5   20.0   4.5  Allensbach
-2025-02-21    29.0   16.0     13.0    4.0     8.0   20.0   5.0      Yougov
-2025-02-22    29.5   15.0     12.5    4.5     7.5   21.0   5.0        INSA
-```
-
-### Sitzverteilung
-
-Wenn nur eine der drei kleinen Parteien (Fall 1) in den Bundestag käme, entfielen 
-zusammen mit den Sonstigen etwa 14.5% der Stimmen. Für eine Mehrheit einer Koalition 
-reichten dann etwa 43.5% der abgegebenen Stimmen. Die Koalitionen CDU/CSU+SPD 
-und CDU/CSU+Grüne wären möglich, letztere nur mit einer Stimme Mehrheit.
-
-Nehmen wir an, eine weitere der beiden kleinen Parteien (z.B FDP oder BSW) 
-käme mit 5% knapp in den Bundestag (Fall 2), dann entstünde eine Situation wie 
-in der folgenden Tabelle beschrieben. Die Mehrheit von Grünen und sogar mit der
-SPD stehen auf der Kippe (und sind vielleicht nicht möglich).
-
-Hypothetische Sitzverteilung im Bundestag 2025:
-
-```
-             Fall 1       Sitze  | Fall 2       Sitze | Endergebnis  Sitze |
-    ------------------------------------------------------------------------
-    CDU/CSU:                220  |                205 |                208 |
-    SPD:                    111  |                104 |                120 |
-    Grüne:                   97  |                 91 |                 85 |
-    AfD:                    151  |                142 |                152 |
-    Linke:                   51  |                 48 |                 64 |
-    FDP o. BSW               --  |                 40 |                 -- |
-```
 
 ### Erläuterungen
 
