@@ -4,7 +4,7 @@
 
 ### Aktuelle Graphik
 
-
+![Abb. Sonntagsfrage](Rplot_2026-05-06.png)
 
 (*Diese Grafik wird alle Vierteljahr oder vor einer Bundestags- oder Landtagswahl aktualisiert.*)
 
